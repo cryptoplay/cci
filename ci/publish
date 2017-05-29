@@ -6,7 +6,7 @@ VCS_REF=${CIRCLE_SHA1:0:7}
 TAG=${BUILD_DATE}-git-${VCS_REF}
 
 docker login -u ${user} -p ${pass}
-docker tag cryptoplay/cci-alpine cryptoplay/cci-alpine:${TAG}
+docker tag cryptoplay/cci-alpine:3.6 cryptoplay/cci-alpine:${TAG}
 docker push cryptoplay/cci-alpine:${TAG}
 docker push cryptoplay/cci-alpine:3.6
 docker logout
