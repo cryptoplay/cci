@@ -8,5 +8,5 @@ TAG=${BUILD_DATE}-git-${VCS_REF}
 docker login -u ${user} -p ${pass}
 docker tag cryptoplay/cci cryptoplay/cci:${TAG}
 docker push cryptoplay/cci:${TAG}
-docker push cryptoplay/cci:latest
+docker push cryptoplay/cci:3.6
 docker logout
