@@ -1,8 +1,8 @@
 version: '2.1'
 
 services:
-  cci: &defaults
-    image: cryptoplay/cci
+  cci-alpine: &defaults
+    image: cryptoplay/cci-alpine:3.6
     build:
       context: src/
     read_only: true
